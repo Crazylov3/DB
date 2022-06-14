@@ -21,7 +21,7 @@ class Logger(Configurable):
     METRICS_FILE_NAME = 'metrics.log'
 
     database_dir = State(default='./content/drive/MyDrive/ocr_out_dir_db/')
-    log_dir = State(default='workspace')
+    log_dir = State(default='/content/drive/MyDrive/ocr_out_dir_db')
     verbose = State(default=False)
     level = State(default='info')
     log_interval = State(default=100)
