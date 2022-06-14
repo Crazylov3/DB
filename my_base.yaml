@@ -8,7 +8,7 @@ define:
     data_dir:
         - './final_data_db/ocr_real/'
     data_list:
-        - './datasets/total_text/train_list.txt'
+        - './final_data_db/ocr_real/train_list.txt'
     processes:
         - class: AugmentDetectionData
           augmenter_args:
