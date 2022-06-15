@@ -32,7 +32,8 @@ define:
             class: DataLoader
             dataset: ^train_data
             batch_size: 16
-            num_workers: 8
+            num_workers: 2
+#            pin_memory: False
         checkpoint:
             class: Checkpoint
             start_epoch: 0
