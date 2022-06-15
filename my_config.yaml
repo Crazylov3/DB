@@ -14,7 +14,7 @@ define:
                 decoder: SegSpatialScaleDetector
                 decoder_args:
                     adaptive: True
-                    in_channels: [256, 512, 1024, 2048]
+                    in_channels: [64, 128, 256, 512]
                     k: 50
                     attention_type: 'scale_channel_spatial'
                 loss_class: L1BalanceCELoss
