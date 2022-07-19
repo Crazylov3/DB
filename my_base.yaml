@@ -14,7 +14,7 @@ define:
         augmenter_args:
           - [ 'Fliplr', 0.5 ]
           - { 'cls': 'Affine', 'rotate': [ -15, 15 ] }
-          - {'cls': 'GaussianBlur', 'sigma': [ 0.0, 1.0 ] }
+#          - {'cls': 'GaussianBlur', 'sigma': [ 0.0, 1.0 ] }
           - {'cls': "AddToHueAndSaturation", 'value': [ -15, 15 ] }
           - {'cls': "FastSnowyLandscape", 'lightness_threshold': [ 100, 255 ] }
           - [ 'Resize', [ 0.5, 3.0 ] ]
