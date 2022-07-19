@@ -11,7 +11,7 @@ define:
             model: SegDetectorModel
             model_args:
                 backbone: deformable_resnet18
-                decoder: SegSpatialScaleDetector
+                decoder: SegDetector
                 decoder_args:
                     adaptive: True
                     in_channels: [64, 128, 256, 512]
@@ -48,13 +48,13 @@ define:
             class: OptimizerScheduler
             optimizer: "SGD"
             optimizer_args:
-                lr: 0.000032
+                lr: 0.00005
                 momentum: 0.9
                 weight_decay: 0.0001
             learning_rate:
                 class: DecayLearningRate
-                epochs: 400
-        epochs: 400
+                epochs: 60
+        epochs: 60
 
     validation: &validate
         class: ValidationSettings
